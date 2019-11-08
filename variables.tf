@@ -1,46 +1,43 @@
+
+variable "access_key" {}
+variable "secret_key" {}
+
 variable "aws_region" {
-  description = "Region where Cloud Formation is created"
-  default     = "us-east-1"
+    description = "AWS region"
+    default = "us-east-1"
 }
 
-variable "cluster_name" {
-  description = "Name of the AWS Minikube cluster - will be used to name all created resources"
+variable "ami_id" {
+    description = "ID of the AMI to provision. Default is AWS Base Image"
+    default = "ami-6d1c2007"
 }
 
-variable "tags" {
-  description = "Tags used for the AWS resources created by this template"
-  type        = map(string)
+variable "instance_type" {
+    description = "type of EC2 instance to provision."
+    default = "t2.micro"
 }
 
-variable "addons" {
-  description = "list of YAML files with Kubernetes addons which should be installed"
-  type        = list(string)
+variable "name" {
+    description = "name to pass to Name tag"
+    default = "rohantf"
 }
 
-variable "aws_instance_type" {
-  description = "Type of instance"
-  default     = "t2.large"
-}
+variable "aws_key" {}
 
-variable "aws_subnet_id" {
-  description = "The subnet-id to be used for the instance"
-}
+variable "s3_bucket_name" {
+  type        = "string"
+  description = "Name of the S3 bucket to be created used to store the remote state file"
+  default     = "rohan-bb-terra"
+  }
 
-variable "ssh_public_key" {
-  description = "Path to the pulic part of SSH key which should be used for the instance"
-  default     = "adminRohan"
-}
+variable "tag_env" {
+  type        = "string"
+  description = "Tag for Environment Name"
+  default     = "dev"
+  }
 
-variable "hosted_zone" {
-  description = "Hosted zone to be used for the alias"
-}
-
-variable "hosted_zone_private" {
-  description = "Is the hosted zone public or private"
-  default     = false
-}
-
-variable "ami_image_id" {
-  description = "ID of the AMI image which should be used. If empty, the latest CentOS 7 image will be used. See README.md for AMI image requirements."
-  default     = ""
-}
+  variable "department" {
+      type = "string"
+      description = "tag for the department"
+      default = "harnessbb"
+  }
