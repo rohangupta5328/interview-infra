@@ -2,6 +2,6 @@ output "region" {
     value = var.aws_region
 }
 
-output "harness" {
-    value = "blackbelt"
+output "tag" {
+    value = "blackbelt-interview"
     }
