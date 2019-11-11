@@ -11,7 +11,7 @@ variable "aws_region" {
 
 variable "ami_id" {
   description = "ID of the AMI to provision. Default is AWS Base Image"
-  default     = "ami-00eb20669e0990cb4"
+  default     = "ami-04b9e92b5572fa0d1"
 }
 
 variable "instance_type" {
