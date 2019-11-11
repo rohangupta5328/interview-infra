@@ -18,7 +18,7 @@ resource "aws_instance" "ec2" {
   instance_type = var.instance_type
   key_name      = var.aws_key
   count         = 1
-  iam_instance_profile= "harness_delegate_rohan"
+  iam_instance_profile= "ecsInstanceRole"
   tags = {
     Department  = "harnessbb"
   }
