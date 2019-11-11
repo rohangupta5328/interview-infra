@@ -20,8 +20,6 @@ resource "aws_instance" "ec2" {
   count         = 1
 
   tags = {
-    Name        = var.name
-    Environment = var.tag_env
     Department  = "harnessbb"
   }
 }

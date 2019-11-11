@@ -24,20 +24,8 @@ variable "name" {
   default     = "rohantf"
 }
 
-variable "aws_key" {
-}
+variable "aws_key" {}
 
-variable "s3_bucket_name" {
-  type        = string
-  description = "Name of the S3 bucket to be created used to store the remote state file"
-  default     = "rohan-bb-terra"
-}
-
-variable "tag_env" {
-  type        = string
-  description = "Tag for Environment Name"
-  default     = "dev"
-}
 
 variable "department" {
   type        = string
