@@ -33,8 +33,8 @@ variable "department" {
   default     = "harnessbb"
 }
 
-variable "role"{
-  description = "iam role"
-  default = "harness_delegate_rohan"
-}
+# variable "role"{
+#   description = "iam role"
+#   default = "harness_delegate_rohan"
+# }
 
