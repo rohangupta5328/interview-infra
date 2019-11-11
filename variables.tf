@@ -28,8 +28,13 @@ variable "aws_key" {}
 
 
 variable "department" {
-  type        = string
+
   description = "tag for the department"
   default     = "harnessbb"
+}
+
+variable "role"{
+  description = "iam role"
+  default = "harness_delegate_rohan"
 }
 
