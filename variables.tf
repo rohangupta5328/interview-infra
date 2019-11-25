@@ -19,10 +19,6 @@ variable "instance_type" {
   default     = "t2.large"
 }
 
-variable "name" {
-  description = "name to pass to Name tag"
-  default     = "blackbelt-interview"
-}
 
 variable "aws_key" {}
 
