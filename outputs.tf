@@ -3,5 +3,5 @@ output "region" {
 }
 
 output "instanceTag" {
-    value = "blackbelt-interview"
+    value = "interview"
     }
