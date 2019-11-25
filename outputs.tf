@@ -2,6 +2,6 @@ output "region" {
     value = var.aws_region
 }
 
-output "tag" {
+output "instanceTag" {
     value = "blackbelt-interview"
     }
