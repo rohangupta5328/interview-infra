@@ -19,7 +19,7 @@ resource "aws_instance" "ec2" {
   key_name      = var.aws_key
   count         = 1
   subnet_id = "subnet-543edf19"
-  iam_instance_profile = "ecsInstanceRole"
+  iam_instance_profile = "harness_delegate_rohan"
   associate_public_ip_address = "true"
   tags = {
     Name  = var.tag
