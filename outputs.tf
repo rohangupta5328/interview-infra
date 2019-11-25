@@ -3,5 +3,5 @@ output "region" {
 }
 
 output "instanceTag" {
-    value = var.aws_instance.ec2.instanceTag
+    value = var.aws_instance.ec2.tag
     }
