@@ -20,7 +20,7 @@ resource "aws_instance" "ec2" {
   count         = 1
   iam_instance_profile= "ecsInstanceRole"
   tags = {
-    Department  = var.tag
+    Department  = var.instanceTag
   }
 }
 
