@@ -27,7 +27,7 @@ variable "name" {
 variable "aws_key" {}
 
 
-variable "instanceTag" {
+variable "tag" {
   description = "tag for the department"
   default     = "interview"
 }
