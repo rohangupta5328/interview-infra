@@ -18,7 +18,10 @@ resource "aws_instance" "ec2" {
   instance_type = var.instance_type
   key_name      = var.aws_key
   count         = 1
-  iam_instance_profile= "ecsInstanceRole"
+  subnet_id = "subnet-543edf19"
+  security_groups = ["sg-0019a69d50d388b8a"]
+  iam_instance_profile = "ecsInstanceRole"
+  associate_public_ip_address = "true"
   tags = {
     Name  = var.tag
   }
