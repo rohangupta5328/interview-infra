@@ -27,10 +27,9 @@ variable "name" {
 variable "aws_key" {}
 
 
-variable "tag" {
-
+variable "instanceTag" {
   description = "tag for the department"
-  default     = "blackbelt-interview"
+  default     = "interview"
 }
 
 
