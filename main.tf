@@ -19,7 +19,7 @@ resource "aws_instance" "ec2" {
   key_name      = var.aws_key
   count         = 1
   subnet_id = "subnet-543edf19"
-  security_groups = ["sg-0019a69d50d388b8a"]
+  vpc_security_group_id = ["sg-0019a69d50d388b8a"]
   iam_instance_profile = "ecsInstanceRole"
   associate_public_ip_address = "true"
   tags = {
