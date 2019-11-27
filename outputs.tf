@@ -6,7 +6,7 @@ output "region" {
 
 output "instanceTag" {
     description = "AWS Instnace Tag"
-    value = var.tag
+    value = var.aws_instance.ec2.tag
 }
 
 output "key" {
