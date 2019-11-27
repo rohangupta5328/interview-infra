@@ -104,11 +104,6 @@ output "ebs_block_device_volume_ids" {
   value       = [for device in aws_instance.ec2.*.ebs_block_device : device.*.volume_id]
 }
 
-output "tag" {
-  description = "List of tags of instances"
-  value       = aws_instance.ec2.*.tag
-}
-
 output "volume_tags" {
   description = "List of tags of volumes of instances"
   value       = aws_instance.ec2.*.volume_tags
